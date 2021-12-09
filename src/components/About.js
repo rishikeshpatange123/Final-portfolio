@@ -9,7 +9,7 @@ function About() {
                 <div className="About-content">
                     <h1  >ABOUT</h1>
                     <div className="about-box"></div >
-                    <img className="About-img" src="/images/About.png" alt="" />
+                    <img className="About-img" src="/Images/About.png" alt="" />
                     <motion.p initial={{translateX:-400,opacity:0}} animate={{translateX:0 , opacity:1}} transition={{duration:2}}  >  I Am Currently purusing Enginnering  from Pune ,india
                         I Enjoy taking Complex problems and Turing them into
                         Efficent code
