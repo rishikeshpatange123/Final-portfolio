@@ -1,0 +1,44 @@
+.Project-container{
+    height: 200vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.project{
+    margin-top: 7%;
+}
+.project img{
+    max-width: 800px;
+    max-height: 600px;
+}
+.project1 {
+    margin-top: 10%;
+}
+.project1 h1{
+    color: white;
+    font-weight: 200;
+    margin-left: 50%;
+}
+
+@media only screen and (max-width:700px){
+    .Project-container{
+        height: 130vh;
+    }
+    .project{
+        margin-top: 25%;
+        margin-left: 2%;
+    }
+    .project img{
+        max-width: 300px;
+        max-height: 400px;
+    }
+    .project1 {
+        margin-top: 30%;
+    }
+    .project1 h1{
+        margin-top: 10%;
+        margin-left: 0%;
+        font-size: 15px;
+    }
+
+}

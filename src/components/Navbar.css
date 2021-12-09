@@ -1,30 +1,144 @@
+a {
+  text-decoration: none;
+}
 
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
+li {
+  list-style: none;
 }
-.logo{
-    width: 50px;
-    cursor: pointer;
-    margin: 30px 0 ;
+.main-nav {
+  width: 100%;
+  position: fixed;
+  height: 1vh;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr  10rem;
 }
-.menu-icon{
-    width: 25px;
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: left;
+  margin-left:-140px;
+
+}
+.logo h1{
+    color: white;
+    font-size: 2.5rem;
     cursor: pointer;
+}
+.menu-link {
+  grid-column: 3/4;
+}
+.menu-link ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: -70px;
+}
+.menu-link ul li a {
+  font-weight: 500;
+  position: absolute;
+  font-size: 29px;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+.menu-link ul li a:hover {
+  color: red;
+}
+.hambuger-menu{
+    
     display: none;
 }
-nav{
-    flex:1;
-    text-align: right;
+
+.hambuger-menu{
+  grid-column: 4/5;
+  margin-left: 110px;
+  margin-top: -5px;
+  }
+.hambuger-menu a{
+    font-size: 2.4rem;
+    color: rgb(255, 255, 255);
 }
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
+.active{
+  color: chartreuse;
 }
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
+.nav-line{
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  height: -4px;
+  margin-left: -660px;
+
+  border: 1px solid #f1efef;
+transform: rotate(90deg);
+}
+.social-media{
+ 
+  position: absolute;
+  left: 3%;
+  margin-top: 560px;
+
+}
+.social-media a{
+  display: flex;
+  font-size: 20px;
+  color: white;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+.social-media a:hover{
+  transform: translateY(-5px);
+}
+
+
+@media (max-width: 800px) {
+  .main-nav {
+    position:static;
+
+  }
+
+  .hambuger-menu{
+    display: block;
+  }
+  .main-nav {
+      margin-top: 5px;
+  }
+  .menu-link {
+  display: none;
+  }
+
+
+  .mobile-menu-link ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -23px;
+  }
+  .mobile-menu-link ul li a{
+    font-size: 28px;
+  }
+  .mobile-menu-link{
+    display:flex;
+    position: absolute;
+      height: 13rem;
+      width: 100%;
+      background: linear-gradient(#ff54a2 , #ff575a);
+      top: 80px;
+      right: 0%;
+      z-index: 10;
+      transform-origin: top;
+  }
+  .logo{
+    margin-top: -30px;
+  }
+  .logo h1{
+    font-size: 2rem;
+}
+.nav-line{
+  display: none;
+}
+.social-media{
+  margin-top: 480px;
+  left: 90%;
+}
 }
