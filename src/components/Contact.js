@@ -14,7 +14,7 @@ export class Contact extends Component {
                 {/* <Tilt className="Tilt"> */}
                     <div className="contact-box">
                         <div className="contact-content">
-                            <img src="./images/Contact-image.png" alt="" />
+                            <img src="./Images/Contact-image.png" alt="" />
                             <h1>Rishikesh Patange</h1>
                             <div>
                                 <li><BiMobileAlt className="contact-media1" /></li>
